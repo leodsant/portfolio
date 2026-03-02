@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonardo Santos - Front-End Developer</title>
+  <link rel="stylesheet" href="./dist/css/output.css">
+  <link rel="icon" href="./dist/public/cabeca.png">
+  <script type="importmap">
+    {
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@v0.183.1/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@v0.183.1/examples/jsm/"
+  }
+}
+</script>
+</head>
+
+<body class="bg-linear-to-tr from-black to-[#1D1D1D] overflow-x-hidden">
+
+  <div id="cursor" class="rounded-full hidden lg:block w-15 h-15 bg-white mix-blend-exclusion z-50 pointer-events-none fixed inset-0 -left-6 -top-5"></div>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+
+
+      <main class="h-dvh flex items-center flex-col justify-around">
+        <div class="">
+          <h1 data-lag=".2"
+            class="uppercase hero-title bg-linear-to-b from-white/90 to-[#828282] bg-clip-text pointer-events-none text-transparent font-bold text-4xl lg:text-[170px]">
+            Leonardo santos</h1>
+        </div>
+        <div class="flex flex-col items-center gap-15 lg:grid lg:grid-cols-3 lg:place-items-center">
+          <div class="text-white/60 font-semibold text-2xl lg:text-[40px] flex flex-col items-center gap-10 lg:gap-37.5">
+            <h2 data-lag=".2" class="hero-h2 a hover:text-white transition-colors duration-300 ease-in-out">Front-end Developer</h2>
+            <h2 data-lag=".4" class="hero-h2 a hover:text-white transition-colors duration-300 ease-in-out">Web Designer</h2>
+          </div>
+          <div id="cabeca" class="relative flex items-center justify-center">
+            <div class="w-45 h-45 lg:w-100 lg:h-100 rounded-full bg-white/30 absolute blur-[50px] -z-10"></div>
+            <img class="lg:w-auto w-80" data-lag=".3" src="./dist/public/cabeca.png" alt="">
+          </div>
+          <div id="scroll-hero" class="w-35 h-35 lg:w-52.25 lg:h-52.25 flex items-center justify-center relative">
+            <svg id="scroll" viewBox="0 0 200 200" class="w-full h-full">
+              <defs>
+                <path id="circlePath" d="M 100,100
+                m -75,0
+                a 75,75 0 1,1 150,0
+                a 75,75 0 1,1 -150,0" />
+              </defs>
+
+              <text fill="" class="text-2xl tracking-widest uppercase">
+                <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                  Role a página para conhecer
+                </textPath>
+              </text>
+            </svg>
+            <div id="arrow-hero" class="absolute inset-0 flex items-center justify-center text-white/60"><i
+                class="fa-solid fa-arrow-down-long fa-lg lg:fa-2xl"></i></div>
+          </div>
+        </div>
+      </main>
+
+      <div class="js-pai w-full h-dvh">
+        <section class="js-filho h-dvh flex flex-col lg:grid lg:grid-cols-3 lg:place-items-center mx-10 items-center gap-10">
+          <div class="text-white/80 col-span-2 font-semibold text-lg lg:text-[32px] gap-5 lg:gap-10 flex flex-col">
+            <p class="js-text">Sou Desenvolvedor Front-End e Web Designer com foco na criação de experiências digitais
+              interativas e
+              imersivas em tempo real.</p>
+            <p class="js-text">Atualmente estudante de Engenharia de Software na FIAP, desenvolvo projetos utilizando
+              JavaScript, GSAP e
+              Three.js, explorando animações avançadas, elementos 3D e interfaces de alto impacto visual.</p>
+            <p class="js-text">Tenho interesse especial na interseção entre tecnologia, design e narrativa digital,
+              criando soluções que
+              não apenas funcionam, mas geram presença e diferenciação.</p>
+          </div>
+          <div id="js" class=" block lg:hidden">
+            <img class="w-70" src="./dist/public/javascript-3d.webp" alt="">
+          </div>
+      </div>
+      </section>
+
+      <section id="section-cards" class="h-dvh relative flex flex-col gap-10 items-center justify-center">
+
+        <div id="card1"
+          class="border-2 border-white rounded-3xl lg:rounded-[90px] relative translate-y-0 lg:-translate-y-15 flex flex-col items-center shadow-md shadow-white/15 w-95 lg:w-300 h-fit lg:h-220 bg-black p-10 gap-10">
+          <div class="flex flex-col gap-5 lg:gap-0 lg:flex-row items-center justify-between w-full">
+            <div class="flex flex-col gap-5 lg:gap-0">
+              <h1
+                class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-2xl lg:text-[40px]">
+                Bleu de chanel</h1>
+              <p class="font-semibold text-lg lg:text-2xl text-white/80">Landing page inspirada no site da chanel, na aba bleu de
+                chanel. Contendo conteúdo 3D e animações com GSAP</p>
+            </div>
+            <a href="https://leodsant.github.io/chanel/"
+              class="a relative flex btn overflow-hidden items-center justify-center w-full lg:w-100 h-17.5">
+              <div class="absolute w-full h-full bg-linear-to-br from-white/30 to-white/10 rounded-[90px] blur-xs">
+              </div>
+              <div
+                class="absolute flex w-full h-full flex-row gap-5 lg:gap-2 items-center justify-center border-2 border-white rounded-[90px] text-white/80 font-semibold text-2xl lg:text-3xl">
+                <span>Conheça</span>
+                <i class="fa-solid fa-arrow-right arrow"></i>
+              </div>
+            </a>
+          </div>
+          <div class=""><video class="rounded-xl lg:rounded-[90px] border-2 border-white/60" muted autoplay loop playsinline
+              preload="metadata" src="./dist/public/bleuDeChanel.webm"></video></div>
+        </div>
+
+        <div id="card2"
+          class="border-2 border-white rounded-3xl lg:rounded-[90px] static lg:absolute translate-y-0 lg:translate-y-35 flex flex-col items-center shadow-md shadow-white/15 w-95 lg:w-300 h-fit lg:h-220 bg-black p-10 gap-10">
+          <div class="relative">
+            <div class="flex flex-col gap-5 lg:gap-0 lg:flex-row items-center justify-between w-full">
+              <div class="flex flex-col gap-5 lg:gap-0">
+                <h1
+                  class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-2xl lg:text-[40px]">
+                  Companhia Aérea</h1>
+                <p class="font-semibold text-lg lg:text-2xl text-white/80">Landing page inspirada em site vencedor do awwwards para
+                  uma companhia aérea. Contendo animações interativas com GSAP e funcionalidade</p>
+              </div>
+              <a href="https://leodsant.github.io/companhiaAerea/"
+                class="a relative flex items-center btn2 overflow-hidden justify-center w-full lg:w-125 h-17.5">
+                <div class="absolute w-full h-full bg-linear-to-br hover:text-white from-white/30 to-white/10 rounded-[90px] blur-xs">
+                </div>
+                <div
+                  class="absolute flex w-full h-full flex-row gap-5 lg:gap-2 items-center justify-center border-2 border-white rounded-[90px] text-white/80 font-semibold text-2xl lg:text-3xl">
+                  <span>Conheça</span>
+                  <i class="fa-solid fa-arrow-right arrow2"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=""><video class="rounded-xl lg:rounded-[90px] border-2 border-white/60" muted autoplay loop playsinline
+              preload="metadata" src="./dist/public/companhiaAerea.webm"></video></div>
+        </div>
+
+
+      </section>
+
+      <footer data-speed="2" class="h-dvh flex justify-evenly flex-col items-center bg-black">
+        <div class="carroussel w-full no-scrollbar flex flex-row overflow-hidden grayscale">
+          <div class="linha flex flex-row gap-[1em] pr-[1em] items-center">
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/webgl.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/webgl.png" alt=""></div>
+          </div>
+          <div class="linha flex flex-row gap-[1em] pr-[1em] items-center">
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-20 lg:w-43.5"><img src="./dist/public/webgl.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-43.5 hidden lg:block"><img src="./dist/public/webgl.png" alt=""></div>
+          </div>
+        </div>
+
+
+        <h1
+          class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-4xl text-center lg:text-8xl">
+          vamos trabalhar juntos?</h1>
+        <div class="flex flex-col items-center lg:items-start gap-10 lg:gap-0 lg:flex-row justify-evenly w-full">
+          <div class="flex flex-col gap-14.5">
+            <div class="flex flex-col gap-4">
+              <h2 class="text-white font-bold text-2xl lg:text-[30px]">Email</h2>
+              <p class="text-white/60 font-bold text-xl lg:text-2xl a hover:text-white transition-colors duration-300 ease-in-out">contato.leodsantos@gmail.com</p>
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2 class="text-white font-bold text-2xl lg:text-[30px]">Localização</h2>
+              <p class="text-white/60 font-bold text-xl lg:text-2xl a hover:text-white transition-colors duration-300 ease-in-out">São Paulo, São Paulo, Brasil</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-14.5">
+            <div class="flex flex-col gap-7">
+              <h2 class="text-white font-bold text-2xl lg:text-[30px]">Social</h2>
+              <a id="link1" href="https://github.com/leodsant"
+                class="flex flex-col items-center justify-between cursor-pointer gap-2">
+                <div class="flex flex-row justify-between w-full items-center">
+                  <p class="text-white/80 a font-bold hover:text-white text-xl lg:text-2xl transition-colors duration-300 ease-in-out">Github</p>
+                  <div class="text-white/80 a hover:text-white -rotate-45 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-arrow-right fa-md lg:fa-lg"></i>
+                  </div>
+                </div>
+                <svg width="170" height="2" viewBox="0 0 229 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="path1" d="M0 1H228.5" stroke="white" stroke-opacity="1" stroke-width="3" />
+                </svg>
+              </a>
+              <a id="link2" href="https://www.linkedin.com/in/leonardo-santos-b1144a3b3/"
+                class="flex flex-col items-center justify-between cursor-pointer gap-2">
+                <div class="flex flex-row justify-between w-full items-center">
+                  <p class="text-white/80 a font-bold hover:text-white text-xl lg:text-2xl transition-colors duration-300 ease-in-out">Linkedin</p>
+                  <div class="text-white/80 a hover:text-white -rotate-45 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-arrow-right fa-md lg:fa-lg"></i>
+                  </div>
+                </div>
+                <svg width="170" height="2" viewBox="0 0 229 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="path2" d="M0 1H228.5" stroke="white" stroke-opacity="1" stroke-width="3" />
+                </svg>
+              </a>
+              <a id="link3" href="https://www.instagram.com/leodsantos._/"
+                class="flex flex-col items-center justify-between cursor-pointer gap-2">
+                <div class="flex flex-row justify-between w-full items-center">
+                  <p class="text-white/80 a font-bold hover:text-white text-xl lg:text-2xl transition-colors duration-300 ease-in-out">Instagram</p>
+                  <div class="text-white/80 a hover:text-white -rotate-45 transition-colors duration-300 ease-in-out"><i class="fa-solid fa-arrow-right fa-md lg:fa-lg"></i>
+                  </div>
+                </div>
+                <svg width="170" height="2" viewBox="0 0 229 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path id="path3" d="M0 1H228.5" stroke="white" stroke-opacity="1" stroke-width="3" />
+                </svg>
+              </a>
+             
+            </div>
+          </div>
+        </div>
+        <h2 class="text-white/80 font-bold text-xl lg:text-3xl text-center">Designed and Developed by <span
+            class="bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold">Leonardo
+            Santos</span></h2>
+
+
+      </footer>
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/b522bdfe69.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Observer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+  <script src="./dist/js/script.js"></script>
+  <script type="module" src="./dist/js/3d.js"></script>
+</body>
+
+</html>
