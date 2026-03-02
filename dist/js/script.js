@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   ScrollSmoother.create({ smooth: 2, effects: true });
 
-  const mobileQuery = window.matchMedia("(max-width: 932px)");
+  const mobileQuery = window.matchMedia("(max-width: 1024px)");
   const cabeca = document.querySelector("#cabeca");
   const threejs = document.querySelector("canvas");
   const jsImg = document.querySelector("#js");
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
       cabeca.addEventListener("touchstart", () => {
         gsap.to(cabeca, {
-          scale: 1.2,
+          scale: 1.1,
           ease: "power2.out",
           duration: 0.5
         });
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
       });
 
-      threejs.classList.add("hidden");
+      threejs.classList.add("opacity-0");
 
       ScrollTrigger.refresh();
 
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
       });
 
-      threejs.classList.remove("hidden");
+      threejs.classList.remove("opacity-100");
 
       gsap.from("#card2", {
         y: 1000,

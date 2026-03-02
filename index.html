@@ -25,20 +25,20 @@
     <div id="smooth-content">
 
 
-      <main class="h-dvh flex items-center flex-col justify-around">
-        <div class="">
+      <main class="h-dvh flex items-center flex-col justify-around md:justify-center gap-7 md:gap-20 mx-0 md:mx-5 lg:mx-0">
+        <div class="pt-7 md:mt-0">
           <h1 data-lag=".2"
-            class="uppercase hero-title bg-linear-to-b from-white/90 to-[#828282] bg-clip-text pointer-events-none text-transparent font-bold text-4xl lg:text-[170px]">
+            class="uppercase hero-title bg-linear-to-b from-white/90 to-[#828282] bg-clip-text pointer-events-none text-transparent font-bold text-4xl md:text-6xl lg:text-[170px]">
             Leonardo santos</h1>
         </div>
-        <div class="flex flex-col items-center gap-15 lg:grid lg:grid-cols-3 lg:place-items-center">
-          <div class="text-white/60 font-semibold text-2xl lg:text-[40px] flex flex-col items-center gap-10 lg:gap-37.5">
+        <div class="flex flex-col items-center gap-5 lg:gap-15 md:grid md:grid-cols-3 md:place-items-center">
+          <div class="text-white/60 font-semibold text-2xl lg:text-[40px] flex flex-col items-center gap-10 lg:gap-37.5 text-center">
             <h2 data-lag=".2" class="hero-h2 a hover:text-white transition-colors duration-300 ease-in-out">Front-end Developer</h2>
             <h2 data-lag=".4" class="hero-h2 a hover:text-white transition-colors duration-300 ease-in-out">Web Designer</h2>
           </div>
           <div id="cabeca" class="relative flex items-center justify-center">
             <div class="w-45 h-45 lg:w-100 lg:h-100 rounded-full bg-white/30 absolute blur-[50px] -z-10"></div>
-            <img class="lg:w-auto w-80" data-lag=".3" src="./dist/public/cabeca.png" alt="">
+            <img class="md:w-full w-80" data-lag=".3" src="./dist/public/cabeca.png" alt="">
           </div>
           <div id="scroll-hero" class="w-35 h-35 lg:w-52.25 lg:h-52.25 flex items-center justify-center relative">
             <svg id="scroll" viewBox="0 0 200 200" class="w-full h-full">
@@ -62,7 +62,7 @@
       </main>
 
       <div class="js-pai w-full h-dvh">
-        <section class="js-filho h-dvh flex flex-col lg:grid lg:grid-cols-3 lg:place-items-center mx-10 items-center gap-10">
+        <section class="js-filho h-dvh flex flex-col md:grid md:grid-cols-3 md:place-items-center m-10 items-center gap-5">
           <div class="text-white/80 col-span-2 font-semibold text-lg lg:text-[32px] gap-5 lg:gap-10 flex flex-col">
             <p class="js-text">Sou Desenvolvedor Front-End e Web Designer com foco na criação de experiências digitais
               interativas e
@@ -75,12 +75,12 @@
               não apenas funcionam, mas geram presença e diferenciação.</p>
           </div>
           <div id="js" class=" block lg:hidden">
-            <img class="w-70" src="./dist/public/javascript-3d.webp" alt="">
+            <img class="w-60" src="./dist/public/javascript-3d.webp" alt="">
           </div>
       </div>
       </section>
 
-      <section id="section-cards" class="h-dvh relative flex flex-col gap-10 items-center justify-center">
+      <section id="section-cards" class="h-dvh relative flex flex-col md:flex-row lg:flex-col gap-10 items-center justify-center mt-60 md:mx-5 lg:mx-0 md:mt-0">
 
         <div id="card1"
           class="border-2 border-white rounded-3xl lg:rounded-[90px] relative translate-y-0 lg:-translate-y-15 flex flex-col items-center shadow-md shadow-white/15 w-95 lg:w-300 h-fit lg:h-220 bg-black p-10 gap-10">
@@ -115,8 +115,7 @@
                 <h1
                   class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-2xl lg:text-[40px]">
                   Companhia Aérea</h1>
-                <p class="font-semibold text-lg lg:text-2xl text-white/80">Landing page inspirada em site vencedor do awwwards para
-                  uma companhia aérea. Contendo animações interativas com GSAP e funcionalidade</p>
+                <p class="font-semibold text-lg lg:text-2xl text-white/80">Landing page inspirada em site vencedor do awwwards. Contendo animações interativas com GSAP</p>
               </div>
               <a href="https://leodsant.github.io/companhiaAerea/"
                 class="a relative flex items-center btn2 overflow-hidden justify-center w-full lg:w-125 h-17.5">
@@ -145,11 +144,11 @@
             <div class="w-20 lg:w-43.5"><img src="./dist/public/tailwind.png" alt=""></div>
             <div class="w-20 lg:w-43.5"><img src="./dist/public/three.png" alt=""></div>
             <div class="w-20 lg:w-43.5"><img src="./dist/public/webgl.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/gsap.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/javascript.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/tailwind.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/three.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/webgl.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/webgl.png" alt=""></div>
           </div>
           <div class="linha flex flex-row gap-[1em] pr-[1em] items-center">
             <div class="w-20 lg:w-43.5"><img src="./dist/public/gsap.png" alt=""></div>
@@ -157,20 +156,20 @@
             <div class="w-20 lg:w-43.5"><img src="./dist/public/tailwind.png" alt=""></div>
             <div class="w-20 lg:w-43.5"><img src="./dist/public/three.png" alt=""></div>
             <div class="w-20 lg:w-43.5"><img src="./dist/public/webgl.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/gsap.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/javascript.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/tailwind.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/three.png" alt=""></div>
-            <div class="w-43.5 hidden lg:block"><img src="./dist/public/webgl.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/gsap.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/javascript.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/tailwind.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/three.png" alt=""></div>
+            <div class="w-20 lg:w-43.5 hidden md:block"><img src="./dist/public/webgl.png" alt=""></div>
           </div>
         </div>
 
 
         <h1
-          class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-4xl text-center lg:text-8xl">
+          class="uppercase bg-linear-to-b from-white/90 to-[#828282] bg-clip-text text-transparent font-bold text-4xl text-center lg:text-8xl pt-4 lg:pt-0">
           vamos trabalhar juntos?</h1>
-        <div class="flex flex-col items-center lg:items-start gap-10 lg:gap-0 lg:flex-row justify-evenly w-full">
-          <div class="flex flex-col gap-14.5">
+        <div class="flex flex-col items-center lg:items-start gap-10 lg:gap-0 md:flex-row justify-evenly w-full">
+          <div class="flex flex-col gap-5 lg:gap-14.5">
             <div class="flex flex-col gap-4">
               <h2 class="text-white font-bold text-2xl lg:text-[30px]">Email</h2>
               <p class="text-white/60 font-bold text-xl lg:text-2xl a hover:text-white transition-colors duration-300 ease-in-out">contato.leodsantos@gmail.com</p>
@@ -180,7 +179,7 @@
               <p class="text-white/60 font-bold text-xl lg:text-2xl a hover:text-white transition-colors duration-300 ease-in-out">São Paulo, São Paulo, Brasil</p>
             </div>
           </div>
-          <div class="flex flex-col gap-14.5">
+          <div class="flex flex-col gap-5 lg:gap-14.5">
             <div class="flex flex-col gap-7">
               <h2 class="text-white font-bold text-2xl lg:text-[30px]">Social</h2>
               <a id="link1" href="https://github.com/leodsant"
