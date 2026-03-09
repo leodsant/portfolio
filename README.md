@@ -1,6 +1,6 @@
 
 
-# ✈ Portfólio
+# 👨🏻‍💻 Portfólio
 
 Meu próprio portfólio, completamente desenhado e desenvolvido por mim
 ## 🖥 Tecnologias usadas
